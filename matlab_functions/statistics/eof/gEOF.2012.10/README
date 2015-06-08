@@ -1,0 +1,36 @@
+gEOF User Guide
+
+
+1. To run the example script:
+
+- Extract all files in gEOF.tar to a directory.
+- Start Matlab from that directory.
+- Run the example script "gEOF_example".
+- Find the results in ./output (.dat and .ctl files in GrADS format).
+
+
+2. To work with your own data:
+
+- Prepare binary data file (*.dat) in GrADS format.
+- Prepare specification file (.spec); see illustration below.
+- Edit gEOF.m as appropriate.
+- Run "gEOF" in Matlab.
+
+
+3. Specification file format:
+
+a b c
+d e f
+g h i
+
+a: missing value flag
+b: reserved for future use
+c: reserved for future use
+d: # of zonal points
+e: longitude of westernmost zonal point
+f: interval of zonal points
+g: # of meridional points
+h: latitude of southernmost meridional point
+i: interval of meridional points
+
+Tip: The .spec file can be easily modified from existing .ctl file of your data.
