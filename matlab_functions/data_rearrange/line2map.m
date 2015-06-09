@@ -1,5 +1,5 @@
 function [output_map] = line2map(mask_map,input_line)
-%
+
 map_dim = size(mask_map);
 output_line = squeeze(zeros(1,prod(map_dim)));
 mask_line = reshape(mask_map,1,[]);
